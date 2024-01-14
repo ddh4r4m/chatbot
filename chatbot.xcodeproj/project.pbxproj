@@ -14,6 +14,10 @@
 		8DD930842B53D23C000905C3 /* chatbotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD930832B53D23C000905C3 /* chatbotTests.swift */; };
 		8DD9308E2B53D23C000905C3 /* chatbotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9308D2B53D23C000905C3 /* chatbotUITests.swift */; };
 		8DD930902B53D23C000905C3 /* chatbotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9308F2B53D23C000905C3 /* chatbotUITestsLaunchTests.swift */; };
+		8DD9309D2B53D4B6000905C3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9309C2B53D4B6000905C3 /* ChatView.swift */; };
+		8DD9309F2B53D511000905C3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD9309E2B53D511000905C3 /* Message.swift */; };
+		8DD930A12B53D5A2000905C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD930A02B53D5A2000905C3 /* NetworkManager.swift */; };
+		8DD930A32B53D79C000905C3 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD930A22B53D79C000905C3 /* WebSocketManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,11 @@
 		8DD930892B53D23C000905C3 /* chatbotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatbotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD9308D2B53D23C000905C3 /* chatbotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbotUITests.swift; sourceTree = "<group>"; };
 		8DD9308F2B53D23C000905C3 /* chatbotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatbotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8DD9309C2B53D4B6000905C3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		8DD9309E2B53D511000905C3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8DD930A02B53D5A2000905C3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8DD930A22B53D79C000905C3 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		8DD930A42B53DF1B000905C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +103,13 @@
 		8DD930712B53D23A000905C3 /* chatbot */ = {
 			isa = PBXGroup;
 			children = (
+				8DD930A42B53DF1B000905C3 /* Info.plist */,
 				8DD930722B53D23A000905C3 /* chatbotApp.swift */,
+				8DD930A02B53D5A2000905C3 /* NetworkManager.swift */,
 				8DD930742B53D23A000905C3 /* ContentView.swift */,
+				8DD9309E2B53D511000905C3 /* Message.swift */,
+				8DD9309C2B53D4B6000905C3 /* ChatView.swift */,
+				8DD930A22B53D79C000905C3 /* WebSocketManager.swift */,
 				8DD930762B53D23C000905C3 /* Assets.xcassets */,
 				8DD930782B53D23C000905C3 /* Preview Content */,
 			);
@@ -258,7 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD930752B53D23A000905C3 /* ContentView.swift in Sources */,
+				8DD9309F2B53D511000905C3 /* Message.swift in Sources */,
+				8DD9309D2B53D4B6000905C3 /* ChatView.swift in Sources */,
+				8DD930A12B53D5A2000905C3 /* NetworkManager.swift in Sources */,
 				8DD930732B53D23A000905C3 /* chatbotApp.swift in Sources */,
+				8DD930A32B53D79C000905C3 /* WebSocketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +443,7 @@
 				DEVELOPMENT_TEAM = VVBZ3B874L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chatbot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +473,7 @@
 				DEVELOPMENT_TEAM = VVBZ3B874L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chatbot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
